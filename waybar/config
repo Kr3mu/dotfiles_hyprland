@@ -1,0 +1,44 @@
+{
+    "spacing": 0,
+
+    "modules-left": [
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+	"hyprland/window",
+	"clock"
+    ],
+    "modules-right": [
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "tray"
+    ],
+
+    "clock": {
+        "interval": 30,
+        "format": "{:%a, %d %b %Y | %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "cpu": {
+        "interval": 1,
+        "format": "CPU: {usage}%",
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": "Mem: {}%"
+    },
+
+    "pulseaudio": {
+        "format": "Vol: {volume}%",
+    	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    	"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    	"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+    },
+
+    "tray": {
+        "spacing": 10
+    }
+}
