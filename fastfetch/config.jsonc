@@ -21,36 +21,36 @@
             "type": "title",
             "keyWidth": 10,
 	    "color": {
-		"user": "#2196f3",
+		"user": "#fff",
 		"at": "white",
-		"host": "#2196f3",
+		"host": "#fff",
 	    }
         },
         "break",
         {
             "type": "os",
             "key": " ",
-            "keyColor": "#2196f3",  // = color3
+            "keyColor": "#fff",  // = color3
         },
         {
             "type": "shell",
             "key": " ",
-            "keyColor": "#2196f3", 
+            "keyColor": "#fff", 
         },
         {
             "type": "terminal",
             "key": " ",
-            "keyColor": "#2196f3", 
+            "keyColor": "#fff", 
         },
         {
             "type": "wm",
             "key": " ",
-            "keyColor": "#2196f3", 
+            "keyColor": "#fff", 
         },
         {
             "type": "uptime",
             "key": " ",
-            "keyColor": "#2196f3", 
+            "keyColor": "#fff", 
         },
         "break",
         "colors",
