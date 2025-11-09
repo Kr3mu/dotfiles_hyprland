@@ -1,11 +1,27 @@
+require('min-theme').setup({
+    transparent = true,
+})
 
----@param color string
 function ColorNvim(color)
     color = color or 'min-theme'
     vim.cmd.colorscheme(color)
-
-    vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
-    vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
 end
 
+require('lualine').setup{
+    options = {
+        icons_enabled = true,
+        section_separators = { left = "", right = "" },
+        component_separators = { left = "", right = "" },
+    },
+    sections = {
+        lualine_a = {'mode'},
+        lualine_b = {'branch', 'diff', 'diagnostics'},
+        lualine_c = {'filename'},
+        lualine_x = {'filetype'},
+        lualine_y = {'progress'},
+        lualine_z = {'location'}
+    }
+};
+
 ColorNvim()
+
