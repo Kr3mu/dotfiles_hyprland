@@ -1,0 +1,26 @@
+matching-algorithm = fuzzy
+num-results = 12
+
+font = BlexMono Nerd Font
+font-size = 22
+prompt-text = " : "
+text-color = #ffffff
+
+width = 50%
+height = 50%
+
+outline-width = 0
+border-width = 2
+corner-radius = 6
+
+padding-top = 10
+padding-bottom = 10
+padding-left = 10
+padding-right = 10
+
+selection-color = #bababa
+prompt-color = #bababa
+input-color = #ffffff
+outline-color = #bababa
+border-color = #bababa
+background-color = #000
